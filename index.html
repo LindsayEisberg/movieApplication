@@ -4,42 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Movie Database</title>
-  <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
   <div class="container">
     <form>
       <div class="form-group" id="createMovie">
-        <label for="newMovieTitle">Movie Title</label>
-        <input type="text" class="form-control" id="newMovieTitle" placeholder="Enter the Movie Title">
+        <label for="newTitle">Movie Title</label>
+        <input type="text" class="form-control" id="newTitle" placeholder="Enter the Movie Title">
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <label for="newDirector">Director</label>
+        <input type="text" class="form-control" id="newDirector" placeholder="Director">
       </div>
       <div class="form-group">
-        <label for="exampleInputFile">File input</label>
-        <input type="file" id="exampleInputFile">
-        <p class="help-block">Example block-level help text here.</p>
+        <label for="newSynopsis">Movie Synopsis</label>
+        <textarea class="form-control" rows="5" name="newSynopsis" id="newSynopsis" placeholder="Enter Movie Synopsis"></textarea>
       </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Check me out
-        </label>
+      <div class="form-group">
+        <label for="newPoster">Upload Movie Image</label>
+        <input type="file" id="newPoster">
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
     <div class="row">
-      <div class="col-md-4">
+      <article class="col-md-4">
         Col 1
-      </div><!-- end col -->
-      <div class="col-md-4">
+      </article><!-- end col -->
+      <article class="col-md-4">
         Col 2
-      </div><!-- end col -->
-      <div class="col-md-4">
+      </article><!-- end col -->
+      <article class="col-md-4">
         Col 3
-      </div> <!-- end col -->
+      </article> <!-- end col -->
     </div> <!-- end row -->
   </div> <!-- end container -->
 
