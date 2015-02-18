@@ -7,14 +7,14 @@ var ListingView = Backbone.View.extend({
     console.log(this.el);
   },
   events: {
-    "click .deletePost": "removeListing",
-    'click .editPost': 'showEdit',
-    'click .submitEdit': 'editListing'
+    "click #deletePost": "removeListing",
+    'click #editPost': 'showEdit',
+    'click #submitEdit': 'editListing'
   },
 
   showEdit: function() {
-    this.$el.find('.editPost').hide();
-    this.$el.find('.submitEdit').addClass('show');
+    this.$el.find('#editPost').hide();
+    this.$el.find('#submitEdit').addClass('show');
     this.$el.find('#updatePost').addClass('show');
     this.$el.find('.content').hide();
   },
@@ -41,9 +41,9 @@ var ListingView = Backbone.View.extend({
 
 
     $('.content').show();
-    $('.editPost').show();
+    $('#editPost').show();
     $('#updatePost').removeClass('show');
-    $('.submitEdit').removeClass('show');
+    $('#submitEdit').removeClass('show');
     console.log('submit edit button clicked');
 
   }
@@ -59,7 +59,7 @@ var CollectionView = Backbone.View.extend({
   },
   events: {
     'submit #createMovie': 'createListing',
-    'click .submitEdit': 'editCollection'
+    'click #submitEdit': 'editCollection'
   },
   createListing: function(e) {
     e.preventDefault();

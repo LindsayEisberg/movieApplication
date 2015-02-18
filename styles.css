@@ -2,11 +2,48 @@
   padding-top: 30px;
   padding-bottom: 30px; }
 
+h2 {
+  font-family: 'Playfair Display', serif;
+  text-align: center; }
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  color: #b2a6a6;
+  text-align: center; }
+
+p {
+  font-family: 'Playfair Display', serif; }
+
+#newPoster {
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; }
+
+#submitListing, #deletePost, #editPost, #submitEdit {
+  border-color: #7e7496; }
+  #submitListing:hover, #deletePost:hover, #editPost:hover, #submitEdit:hover {
+    background-color: #7e7496;
+    color: white;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
+
 #createMovie {
   border: 6px double #e2e2e2;
   border-radius: 5px;
   padding: 20px;
   margin: 20px auto 20px auto; }
+  #createMovie label {
+    font-size: 1.2em;
+    font-family: 'Playfair Display', serif; }
 
 /* section {
   display: flex;
@@ -19,22 +56,38 @@ article {
   margin-bottom: 30px;
   height: 700px; }
 
-.col-md-4 {
-  width: 32%;
-  margin-right: 15px; }
+.btnGroup {
+  display: flex;
+  justify-content: center; }
+
+#deletePost {
+  margin: 5px; }
+
+#editPost {
+  margin: 5px; }
 
 #updatePost {
+  margin-top: 8%;
   display: none; }
+  #updatePost input {
+    width: 100%; }
 
 img {
-  width: 300px;
-  height: 400px;
+  max-width: 300px;
+  max-height: 400px;
   margin: auto;
   padding-bottom: 10px;
+  padding-top: 5px;
   margin-left: 25px; }
 
-.submitEdit {
+#submitEdit {
+  margin: 5px;
   display: none; }
 
 .show {
   display: block; }
+
+@media screen and (min-width: 992px) {
+  .col-md-4 {
+    width: 32%;
+    margin: 7px; } }

@@ -6,25 +6,40 @@
   <title>Movie Database</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic' rel='stylesheet' type='text/css'>
   <script type="text/template" id="postTmpl">
     <div class="content">
     <h2><%= title %></h2>
+    <hr />
     <h3><%= director %></h3>
     <p><%= synopsis %></p>
     <img src='<%= poster %>' >
     </div>
 
     <form id="updatePost" action="">
-        <p><input type="text" name="editTitle" value="<%= title %>" placeholder="Title"></p>
-        <p><input type="text" name="editDirector" value="<%= director %>" placeholder="Director"></p>
-        <p><textarea name="editSynopsis" placeholder="Content"><%= synopsis %></textarea></p>
-        <p><input type="text" name="editPoster" value="<%= poster %>" placeholder="Image Url"></p>
+      <div class="form-group">
+        <p><label for="editTitle">Movie Title</label></p>
+          <p><input type="text" name="editTitle" value="<%= title %>" placeholder="Title"></p>
+      </div>
+      <div class="form-group">
+        <p><label for="editDirector">Director</label></p>
+          <p><input type="text" name="editDirector" value="<%= director %>" placeholder="Director"></p>
+      </div>
+      <div class="form-group">
+        <p><label for="editSynopsis">Movie Synopsis</label></p>
+          <p><textarea class="form-control" rows="5" name="editSynopsis" placeholder="Content"><%= synopsis %></textarea></p>
+      </div>
+      <div class="form-group">
+        <p><label for="editPoster">Upload Movie Image</label></p>
+          <p><input type="text" name="editPoster" value="<%= poster %>" placeholder="Image Url"></p>
+      </div>
       </form>
 
-
-<button class='deletePost'>Delete</button>
-<button class='editPost'>Edit Post</button>
-<button class='submitEdit'>Submit</button>
+<div class="btnGroup">
+<button class="btn btn-default" id='deletePost'>Delete</button>
+<button class="btn btn-default" id='editPost'>Edit Post</button>
+<button class="btn btn-default" id='submitEdit'>Submit</button>
+</div>
   </script>
 </head>
 <body>
@@ -47,9 +62,9 @@
       </div>
       <div class="form-group">
         <label for="newPoster">Upload Movie Image</label>
-        <input type="url" id="newPoster" name="newPoster">
+        <input type="url" id="newPoster" name="newPoster" placeholder="Input Image URL">
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button type="submit" class="btn btn-default" id="submitListing">Submit</button>
     </form>
 
 
