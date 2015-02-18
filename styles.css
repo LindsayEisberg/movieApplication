@@ -7,10 +7,19 @@ form {
   padding: 20px;
   margin: 20px auto 20px auto; }
 
-.col-md-4 {
-  width: 32%; }
-
+/* section {
+  display: flex;
+}
+ */
 article {
   border: 2px solid #e2e2e2;
   border-radius: 5px;
-  margin: 0 5px 0 5px; }
+  padding-bottom: 10px;
+  height: 630px; }
+
+img {
+  width: 300px;
+  height: 400px;
+  margin: auto;
+  padding-bottom: 10px;
+  margin-left: 25px; }

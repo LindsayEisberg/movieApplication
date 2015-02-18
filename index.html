@@ -6,18 +6,26 @@
   <title>Movie Database</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="styles.css">
-
+  <script type="text/template" id="postTmpl">
+    <h2><%= title %></h2>
+    <h3><%= director %></h3>
+    <p><%= synopsis %></p>
+    <img src='<%= poster %>' >
+    <button class='deletePost'>Delete</button>
+  </script>
 </head>
 <body>
   <div class="container">
-    <form>
-      <div class="form-group" id="createMovie">
+    <section>
+      <div class="row">
+    <form id="createMovie">
+      <div class="form-group">
         <label for="newTitle">Movie Title</label>
-        <input type="text" class="form-control" id="newTitle" placeholder="Enter the Movie Title">
+        <input type="text" class="form-control" id="newTitle" name="newTitle" placeholder="Enter the Movie Title">
       </div>
       <div class="form-group">
         <label for="newDirector">Director</label>
-        <input type="text" class="form-control" id="newDirector" placeholder="Director">
+        <input type="text" class="form-control" id="newDirector" name="newDirector" placeholder="Director">
       </div>
       <div class="form-group">
         <label for="newSynopsis">Movie Synopsis</label>
@@ -25,20 +33,15 @@
       </div>
       <div class="form-group">
         <label for="newPoster">Upload Movie Image</label>
-        <input type="file" id="newPoster">
+        <input type="url" id="newPoster" name="newPoster">
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
-    <div class="row">
-      <article class="col-md-4">
-        Col 1
-      </article><!-- end col -->
-      <article class="col-md-4">
-        Col 2
-      </article><!-- end col -->
-      <article class="col-md-4">
-        Col 3
-      </article> <!-- end col -->
+
+
+
+    </div>
+    </section>
     </div> <!-- end row -->
   </div> <!-- end container -->
 
