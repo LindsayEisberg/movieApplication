@@ -1,7 +1,8 @@
 .container {
-  padding-top: 30px; }
+  padding-top: 30px;
+  padding-bottom: 30px; }
 
-form {
+#createMovie {
   border: 6px double #e2e2e2;
   border-radius: 5px;
   padding: 20px;
@@ -15,7 +16,15 @@ article {
   border: 2px solid #e2e2e2;
   border-radius: 5px;
   padding-bottom: 10px;
-  height: 630px; }
+  margin-bottom: 30px;
+  height: 700px; }
+
+.col-md-4 {
+  width: 32%;
+  margin-right: 15px; }
+
+#updatePost {
+  display: none; }
 
 img {
   width: 300px;
@@ -23,3 +32,9 @@ img {
   margin: auto;
   padding-bottom: 10px;
   margin-left: 25px; }
+
+.submitEdit {
+  display: none; }
+
+.show {
+  display: block; }

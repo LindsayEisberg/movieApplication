@@ -7,17 +7,31 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="styles.css">
   <script type="text/template" id="postTmpl">
+    <div class="content">
     <h2><%= title %></h2>
     <h3><%= director %></h3>
     <p><%= synopsis %></p>
     <img src='<%= poster %>' >
-    <button class='deletePost'>Delete</button>
+    </div>
+
+    <form id="updatePost" action="">
+        <p><input type="text" name="editTitle" value="<%= title %>" placeholder="Title"></p>
+        <p><input type="text" name="editDirector" value="<%= director %>" placeholder="Director"></p>
+        <p><textarea name="editSynopsis" placeholder="Content"><%= synopsis %></textarea></p>
+        <p><input type="text" name="editPoster" value="<%= poster %>" placeholder="Image Url"></p>
+      </form>
+
+
+<button class='deletePost'>Delete</button>
+<button class='editPost'>Edit Post</button>
+<button class='submitEdit'>Submit</button>
   </script>
 </head>
 <body>
   <div class="container">
+    <div class="row">
     <section>
-      <div class="row">
+
     <form id="createMovie">
       <div class="form-group">
         <label for="newTitle">Movie Title</label>
@@ -40,7 +54,6 @@
 
 
 
-    </div>
     </section>
     </div> <!-- end row -->
   </div> <!-- end container -->
