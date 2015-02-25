@@ -1,0 +1,28 @@
+{
+  "name": "movieApplication",
+  "version": "1.0.0",
+  "description": "testing",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LindsayEisberg/movieApplication.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LindsayEisberg/movieApplication/issues"
+  },
+  "homepage": "https://github.com/LindsayEisberg/movieApplication",
+  "devDependencies": {
+    "chai": "^2.1.0",
+    "mocha": "^2.1.0",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.7.0"
+  }
+}
